@@ -7,12 +7,16 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/contactme' ,function(req,res,next){
-  res.render('contactme')
-})
+  res.render('contactme');
+});
 
 router.get('/about' ,function(req,res,next){
-  res.render('about')
-})
+  res.render('about');
+});
+
+router.get('/projectspage' ,function(req,res,next){
+  res.render('projectspage');
+});
 
 
 
