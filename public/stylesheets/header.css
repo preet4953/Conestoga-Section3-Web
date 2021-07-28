@@ -1,0 +1,12 @@
+.header {
+  padding: 150px;
+  text-align: left;
+  /* background: #1abc9c; */
+  background-image: url(/images/image.jpg);
+  background-position: bottom;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.header h1 {
+  color: white;
+}

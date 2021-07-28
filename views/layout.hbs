@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--- Css from bootswatch.com  --->
+    <link rel='stylesheet' href="/stylesheets/bootstrap.min.css"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />    
     
-    <!--- Style sheet From bootswatch.com -->
-    
-    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'/>
-    
-    <!--- Css file i created to create a footer-->
-    
+    <!--- Css file i created to create a footer--> 
     <link rel='stylesheet' href="/stylesheets/footer.css"/>
+    <!--- For header--->
+    <link rel="stylesheet" href="/stylesheets/header.css"/>
+
+    
   
   <!---Bootstrap 4 Navigation Bar from W3schools.com --->
-  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+  <nav class="navbar  sticky-top navbar-expand-lg bg-primary navbar-dark" style="margin-bottom: 2px;" >
     <a class="navbar-brand" href="/">Logo</a>
     <!-- Links -->
     <ul class="navbar-nav">
@@ -34,10 +36,15 @@
     </ul>  
   </nav>
   </head>
-    <body>
+    
+    <body style="background-color: #272727">
+    <div class="header">
+      <h1>Welcome</h1>
+    </div>
+
     {{{body}}}
           
-          
+    <!--- footer created by me Css is in footer.css inside styles sheets folder-->      
     <footer> 
       <ul class="footer-list">
         <li class="footer-list-item">
