@@ -137,3 +137,7 @@ footer {
   text-decoration: none;
   padding: 10px;
 }
+
+a.footerItem:hover {
+  text-decoration: none;
+}
