@@ -125,6 +125,7 @@ body {
 footer {
   margin-top: 30px;
   display: flex;
+  flex-direction: column;
   min-height: 200px;
   padding: 10px;
   background-color: rgb(255, 69, 58, 0.95);
@@ -137,7 +138,16 @@ footer {
   text-decoration: none;
   padding: 10px;
 }
+.footerItem img {
+  border-radius: 10px;
+  padding: 10px;
+}
+.footerItem img:hover {
+  background-color: white;
+}
 
 a.footerItem:hover {
   text-decoration: none;
+
+  width: 10px;
 }
