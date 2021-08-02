@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(255, 69, 58, 0.95);
+  background-color: rgb(98, 125, 152, 0.98);
   min-width: 300px;
 }
 .navbar .navbar-brand {
@@ -31,7 +31,7 @@
 
 .header {
   padding: 150px;
-  text-align: left;
+  text-align: center;
   /* background: #1abc9c; */
   background-image: url(/images/image.jpg);
   background-position: bottom;
@@ -40,6 +40,9 @@
 }
 .header h1 {
   color: white;
+  padding: 10%;
+  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
 
 body {
@@ -128,7 +131,7 @@ footer {
   flex-direction: column;
   min-height: 200px;
   padding: 10px;
-  background-color: rgb(255, 69, 58, 0.95);
+  background-color: rgb(98, 125, 152, 0.98);
   /* color: black; */
   justify-content: center;
   align-items: center;
@@ -143,7 +146,8 @@ footer {
   padding: 10px;
 }
 .footerItem img:hover {
-  background-color: white;
+  background-color: #007bbf;
+  /* background-image: url(https://img.icons8.com/ios/50/000000/twitter-circled--v1.png); */
 }
 
 a.footerItem:hover {
