@@ -6,6 +6,12 @@
   color: white;
   font-size: x-large;
 }
+
+.navbar .navbar-brand img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
 .navbar .nav-item {
   margin: 1px;
 }
@@ -30,12 +36,15 @@
 /* Here is header of website */
 
 .header {
-  padding: 150px;
-  text-align: center;
+  padding: 260px;
+  /* text-align: end; */
   display: flex;
+  /* position: relative; */
   /* background: #1abc9c; */
-  background-image: url(/images/image.jpg);
+  /* background-image: url(https://i.pinimg.com/originals/45/ec/80/45ec802c8a35ae258dd633d225105506.jpg); */
+  background-image: url(https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
   background-position: bottom;
+
   background-size: cover;
   margin-bottom: 30px;
   justify-content: center;
@@ -43,13 +52,13 @@
 .header h1 {
   color: white;
   padding: 10%;
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgb(98, 125, 152, 0.8);
   border-radius: 10px;
 }
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #000000;
+  background-color: rgb(35, 43, 43);
 }
 
 /* <--About Page --> */
@@ -103,6 +112,10 @@ body {
 }
 .project-container .outside-project-card .card .card-body {
   color: whitesmoke;
+}
+
+.project-container .outside-project-card .card .card-body .card-text {
+  color: #818181;
 }
 
 /* Contact page */
