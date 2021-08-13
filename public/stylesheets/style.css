@@ -36,8 +36,8 @@
 /* Here is header of website */
 
 .header {
-  padding: 260px;
   /* text-align: end; */
+  padding: 20%;
   display: flex;
   /* position: relative; */
   /* background: #1abc9c; */
@@ -47,8 +47,9 @@
   background-position: center;
 
   background-size: cover;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   justify-content: center;
+  width: 100%;
 }
 .header h1 {
   color: white;
