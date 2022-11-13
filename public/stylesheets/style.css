@@ -1,5 +1,6 @@
 .navbar {
-  background-color: rgb(98, 125, 152, 0.98);
+  
+  background-color:#333;
   min-width: 300px;
 }
 .navbar .navbar-brand {
@@ -11,12 +12,16 @@
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
+ transition: transform .7s ease-in-out;
+}
+.navbar .navbar-brand img:hover{
+  transform: rotate(360deg);
 }
 .navbar .nav-item {
   margin: 1px;
 }
 .navbar .nav-item .nav-link {
-  color: black;
+  color: white;
   font-size: medium;
 }
 
@@ -34,28 +39,51 @@
 }
 
 /* Here is header of website */
+@keyframes slideup {
+  0% {
+    transform: translatey(40%);
+    opacity: -0;
+  }
+  100% {
+    transform: translatey(-0);
+    opacity: 0.4;
+  }
+}
+
+@keyframes fadein{
+  0%{
+    opacity: -0;
+  }
+  100%{
+    opacity: 0.4;
+  }
+}
 
 .header {
   /* text-align: end; */
   padding: 20%;
   display: flex;
+  animation: 2s ease-out 1s fadein;
   /* position: relative; */
   /* background: #1abc9c; */
   /* background-image: url(https://i.pinimg.com/originals/45/ec/80/45ec802c8a35ae258dd633d225105506.jpg); */
   background-image: url(https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
   /* background-image: url(https://images.unsplash.com/photo-1546900703-cf06143d1239?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1891&q=80); */
   background-position: center;
-
+  opacity: 0.4;
   background-size: cover;
   margin-bottom: 50px;
   justify-content: center;
   width: 100%;
+
 }
 .header h1 {
   color: white;
-  padding: 10%;
-  background-color: rgb(98, 125, 152, 0.8);
-  border-radius: 10px;
+  font-size: 5vw;
+  animation: 2s ease-out 1s slideup;
+  background-color: rgba(47, 53, 59, 0.8);
+ 
+  
 }
 
 body {
@@ -80,6 +108,7 @@ body {
   flex-wrap: wrap;
   max-width: 1000px;
   justify-content: space-evenly;
+  
   padding: 50px;
   width: fit-content;
   border-radius: 20px;
@@ -149,7 +178,7 @@ footer {
   flex-direction: column;
   min-height: 200px;
   padding: 10px;
-  background-color: rgb(98, 125, 152, 0.98);
+  background-color: #333;
   /* color: black; */
   justify-content: center;
   align-items: center;
@@ -157,14 +186,18 @@ footer {
 
 .footerItem {
   text-decoration: none;
+  
   padding: 10px;
 }
 .footerItem img {
   border-radius: 10px;
+  width: 80px;
   padding: 5px;
+  transition: transform .7s ease-in-out;
 }
 .footerItem img:hover {
   background-color: #007bbf;
+  transform: scale(1.5);
   /* background-image: url(https://img.icons8.com/ios/50/000000/twitter-circled--v1.png); */
 }
 
